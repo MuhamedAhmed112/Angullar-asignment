@@ -1,0 +1,23 @@
+<body class="bg-danger-subtle">
+    <div class="container ">
+        <div class="row">
+            @for (product of productlist; track $index) {
+    
+    
+            <div class="col-md-4 d-flex">
+                <div class="bg-dark text-white m-2">
+                    <img [src]="product.Pimge" class="w-100 rounded-3" alt="">
+                    <p>Pname= {{product.Pname}}</p>
+                    <p>Pprice={{product.Pprice}}</p>
+                    <p>Pcat={{product.Pcat}}</p>
+                    <p>Pprice={{product.Pprice}}</p>
+                    <p>pcode={{product.pcode}}</p>
+    
+                </div>
+            </div>
+    
+            }
+        </div>
+    
+    </div>
+</body>
